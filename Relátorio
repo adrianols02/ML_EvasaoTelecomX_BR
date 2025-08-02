@@ -1,0 +1,37 @@
+#Relatório de Análise de Churn de Clientes
+##1. Introdução
+Este relatório apresenta os resultados de um projeto de machine learning para prever o churn (cancelamento) de clientes em uma empresa de telecomunicações. O objetivo principal foi construir um modelo preditivo para identificar clientes com alta probabilidade de cancelar o serviço, permitindo que a empresa tome ações proativas para retê-los.
+
+##2. Metodologia
+O projeto seguiu as seguintes etapas:
+
+Coleta e Pré-processamento de Dados: Os dados dos clientes foram carregados e pré-processados, incluindo a transformação de variáveis categóricas em numéricas e a normalização dos dados.
+Análise Exploratória de Dados: Foi realizada uma análise para entender a distribuição dos dados e a correlação entre as variáveis.
+Divisão dos Dados: Os dados foram divididos em conjuntos de treino (80%), validação (10%) e teste (10%).
+Seleção e Treinamento de Modelos: Vários modelos de classificação foram treinados e avaliados, incluindo Regressão Logística, Random Forest, Gradient Boosting, SVC e LGBMClassifier.
+Otimização de Hiperparâmetros: O modelo com melhor desempenho (Gradient Boosting) foi otimizado para maximizar a métrica de recall.
+3. Resultados
+O modelo final escolhido foi o Gradient Boosting, otimizado para recall. Os resultados no conjunto de teste foram os seguintes:
+
+*Recall: 50%*
+*Precisão: 60%*
+*Acurácia: 78%*
+Isso significa que o modelo é capaz de identificar corretamente metade dos clientes que realmente cancelariam o serviço.
+
+Fatores Mais Importantes para o Churn
+A análise da importância das variáveis revelou os seguintes fatores como os mais influentes na previsão de churn:
+
+Tipo de Contrato: Clientes com contrato mensal são os mais propensos a cancelar.
+Tempo de Permanência (Tenure): Clientes mais novos têm maior probabilidade de churn.
+Valor Total Cobrado: O valor total cobrado do cliente é um fator relevante.
+Serviço de Internet: Clientes com fibra ótica apresentaram maior propensão ao churn.
+Cobrança Mensal: Valores mensais mais altos estão associados a um maior risco de churn.
+4. Conclusão e Recomendações
+O modelo de machine learning desenvolvido pode ser uma ferramenta valiosa para a empresa reduzir o churn de clientes. Com base nos resultados, recomendamos as seguintes ações:
+
+Focar em Clientes de Alto Risco: Direcionar as campanhas de retenção para clientes com contrato mensal e baixo tempo de permanência.
+Incentivar Contratos de Longo Prazo: Oferecer benefícios para que os clientes com contrato mensal migrem para planos anuais ou de dois anos.
+Melhorar a Experiência do Novo Cliente: Implementar um programa de acompanhamento nos primeiros meses para garantir a satisfação dos novos clientes.
+Investigar o Serviço de Fibra Ótica: Analisar se há problemas de qualidade, preço ou atendimento relacionados a este serviço.
+A implementação dessas estratégias, guiada pelos insights do modelo, tem o potencial de aumentar a retenção de clientes e, consequentemente, a lucratividade da empresa.
+
